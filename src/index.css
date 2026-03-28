@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-red: #FF003C;
+  --color-neon-violet: #E056FD;
+  --color-void-black: #000000;
+  
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-void-black);
+    color: white;
+    font-family: var(--font-mono);
+    margin: 0;
+    overflow: hidden; /* No scroll for game engine */
+    user-select: none;
+  }
+}
